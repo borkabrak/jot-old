@@ -1,0 +1,17 @@
+JOT
+===
+
+This is a reimagining of my 'jot' script as a web app.  (Currently found in
+bin/)
+
+The main engine is a RESTful service, accessed by:
+
+  * A web interface
+
+  * A shell interface that runs as a standalone script, commmunicating over
+    the net to the JOT service, which manages the data.
+
+Down the road I can consider implementing features such as user accounts with
+the concomitant security, etc.  But for now, I'm just making jot a service
+accesible over the web, either with the browser or with a script that
+basically wraps the appropriate curl/wget commands.
